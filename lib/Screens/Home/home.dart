@@ -798,9 +798,9 @@ class _HomePageState extends State<HomePage> {
                                                           fontSize: 16.0,
                                                           color:
                                                               Theme.of(context)
-                                                                  .textTheme
-                                                                  .caption!
-                                                                  .color,
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .color,
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),

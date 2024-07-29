@@ -18,7 +18,7 @@
  */
 
 import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/search_bar.dart';
+import 'package:blackhole/CustomWidgets/search_bar.dart' as custom_Search_bar;
 import 'package:blackhole/Screens/YouTube/youtube_playlist.dart';
 import 'package:blackhole/Screens/YouTube/youtube_search.dart';
 import 'package:blackhole/Services/youtube_services.dart';
@@ -113,7 +113,7 @@ class _YouTubeState extends State<YouTube>
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.transparent,
-      body: SearchBar(
+      body: custom_Search_bar.SearchBar(
         isYt: true,
         controller: _controller,
         liveSearch: true,
@@ -355,7 +355,7 @@ class _YouTubeState extends State<YouTube>
                                                       fontSize: 11,
                                                       color: Theme.of(context)
                                                           .textTheme
-                                                          .caption!
+                                                          .bodyLarge!
                                                           .color,
                                                     ),
                                                   ),

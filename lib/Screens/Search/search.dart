@@ -24,7 +24,7 @@ import 'package:blackhole/CustomWidgets/empty_screen.dart';
 import 'package:blackhole/CustomWidgets/gradient_containers.dart';
 import 'package:blackhole/CustomWidgets/like_button.dart';
 import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/search_bar.dart';
+import 'package:blackhole/CustomWidgets/search_bar.dart' as custom_Search_bar;
 import 'package:blackhole/CustomWidgets/snackbar.dart';
 import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
 import 'package:blackhole/Screens/Common/song_list.dart';
@@ -146,7 +146,7 @@ class _SearchPageState extends State<SearchPage> {
               child: Scaffold(
                 resizeToAvoidBottomInset: false,
                 backgroundColor: Colors.transparent,
-                body: SearchBar(
+                body: custom_Search_bar.SearchBar(
                   isYt: false,
                   controller: controller,
                   liveSearch: liveSearch,
@@ -374,7 +374,7 @@ class _SearchPageState extends State<SearchPage> {
                                                                       context,
                                                                     )
                                                                         .textTheme
-                                                                        .caption!
+                                                                        .bodyLarge!
                                                                         .color,
                                                                     fontWeight:
                                                                         FontWeight
@@ -389,7 +389,7 @@ class _SearchPageState extends State<SearchPage> {
                                                                     context,
                                                                   )
                                                                       .textTheme
-                                                                      .caption!
+                                                                      .bodyLarge!
                                                                       .color,
                                                                 ),
                                                               ],
@@ -618,6 +618,7 @@ class _SearchPageState extends State<SearchPage> {
                   },
                 ),
               ),
+              
             ),
             const MiniPlayer(),
           ],

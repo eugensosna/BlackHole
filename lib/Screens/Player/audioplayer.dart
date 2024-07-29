@@ -426,7 +426,7 @@ class _PlayScreenState extends State<PlayScreen> {
                                             fontWeight: FontWeight.w600,
                                             color: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyLarge!
                                                 .color,
                                           ),
                                         ),

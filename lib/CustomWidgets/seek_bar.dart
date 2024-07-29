@@ -181,7 +181,7 @@ class _SeekBarState extends State<SeekBar> {
                     .firstMatch('$_duration')
                     ?.group(1) ??
                 '$_duration',
-            // style: Theme.of(context).textTheme.caption!.copyWith(
+            // style: Theme.of(context).textTheme.bodyLarge!.copyWith(
             //       color: Theme.of(context).iconTheme.color,
             //     ),
           ),
